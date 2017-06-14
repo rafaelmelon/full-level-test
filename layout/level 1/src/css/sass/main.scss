@@ -3,7 +3,10 @@
 // Custom
 @import "colors.scss";
 @import "fonts.scss";
+@import "queries.scss";
 @import "custom.scss";
 
-//Vendor
-// @import "vendor/awesome/font-awesome.scss";
+// Blocks
+@import "blocks/nav.scss";
+@import "blocks/content.scss";
+@import "blocks/footer.scss";

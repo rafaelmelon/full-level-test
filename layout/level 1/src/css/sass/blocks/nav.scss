@@ -1,0 +1,60 @@
+// main: ../main.scss
+
+.b-nav {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  nav {
+    height: 100px;
+    .logo {
+      font-size: 26px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      top: 35px;
+    }
+    ul {
+      float: right;
+      margin-top: 40px;
+      li {
+        display: inline-block;
+        a {
+          font-size: 16px;
+          text-transform: uppercase;
+          opacity: 0.5;
+          margin: 0 4px;
+        }
+      }
+      &.show {
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+      @media (max-width: $screen-sm) {
+        display: none;
+        width: 100%;
+        li {
+          width: 100%;
+          padding: 5px 0;
+        }
+      }
+    }
+    .btn-mob {
+      border-bottom: 13px double #fff;
+      border-top: 4px solid #fff;
+      content: "";
+      height: 5px;
+      width: 30px;
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      top: 30px;
+      right: 35px;
+      @media (max-width: $screen-sm) {
+        display: block;
+      }
+    }
+  }
+
+}

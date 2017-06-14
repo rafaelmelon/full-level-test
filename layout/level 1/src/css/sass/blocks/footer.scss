@@ -1,0 +1,31 @@
+// main: ../main.scss
+
+.b-footer {
+  height: 100%;
+  position: relative;
+  span {
+    position: absolute;
+    bottom: 318px;
+    left: 20%;
+    -webkit-transform: translateX(-5%);
+    transform: translateX(-5%);
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      text-align: center;
+      left: inherit;
+      -webkit-transform: inherit;
+      transform: inherit;
+    }
+    figure {
+      display: inline-block;
+    }
+    @media (max-width: $screen-sm) {
+      figure {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
